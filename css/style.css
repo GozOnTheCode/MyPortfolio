@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0C0325;
+    font-family: Montserrat;
+    /* overflow-y: hidden; */
+}
+
+
+/* VERTICAL TEXT */
+
+.container {
+    margin-top: 200px;
+}
+
+.name {
+    grid-row: 1 / 10;
+    grid-column: 1 / 2;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg) translate(0.2rem, 4rem);
+    color: #206466;
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 300px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+small {
+    font-size: 15px;
+    margin-top: 190px;
+    font-family: Roboto;
+}
+
+/* BOX */
+
+
+.box-1 {
+    color: #206466;
+    width: 250px;
+    height: 250px;
+    background-color: #f4f482;
+    margin-left: 650px;
+    margin-top: -700px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.h1-box1 {
+    transform: translateY(200%);
+    margin-left: 20px;
+}
+
+.p-box1 {
+    transform: translateY(110%);
+    margin-left: 20px;
+}
+
+.box-1:hover {
+    transform: scale(1.1);
+}
+
+.box-2 {
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: #15e6cd;
+    margin-left: 800px;
+    margin-top: -30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.h1-box2 {
+    transform: translateY(200%);
+    margin-left: 20px;
+}
+
+.p-box2 {
+    transform: translateY(110%);
+    margin-left: 20px;
+}
+
+.box-2:hover {
+    transform: scale(1.1);
+}
+
+.box-3 {
+    color: #206466;
+    width: 250px;
+    height: 250px;
+    background-color: #f4f482;
+    margin-left: 1200px;
+    margin-top: -200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.h1-box3 {
+    transform: translateY(200%);
+    margin-left: 20px;
+}
+
+.box-3:hover {
+    transform: scale(1.1);
+}
+
+.p-box3 {
+    transform: translateY(110%);
+    margin-left: 20px;
+}
+
+
+.box-4 {
+    color: #206466;
+    width: 250px;
+    height: 250px;
+    background-color: #f4f482;
+    margin-left: 500px;
+    margin-top:200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.h1-box4 {
+    transform: translateY(200%);
+    margin-left: 20px;
+} 
+
+.p-box4 {
+    transform: translateY(150%);
+    margin-left: 20px;
+}
+
+.box-4:hover {
+    transform: scale(1.1);
+}
+
+.box-5 {
+    color: white;
+    width: 200px;
+    height: 200px;
+    background-color: #15e6cd;
+    margin-left: 1350px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.h1-box5 {
+    transform: translateY(100%);
+    margin-left: 10px;
+}
+
+.p-box5 {
+    transform: translateY(120%);
+    margin-left: 10px;
+}
+
+.box-5:hover {
+    transform: scale(1.1);
+}
+
+.box-6 {
+    color: #206466;
+    width: 200px;
+    height: 200px;
+    background-color: #f4f482;
+    margin-left: 1100px;
+    margin-top: 230px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.h1-box6 {
+    transform: translateY(100%);
+    margin-left: 10px;
+}
+
+.p-box6 {
+    margin-left: 10px;
+    transform: translateY(60%);
+}
+
+
+.box-6:hover {
+    transform: scale(1.1);
+}
+
+/* BURGER MENU */
+
+.openbutton {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 1px;
+    width: 105px;
+    border: solid 3px white;
+    font-family: Montserrat;
+    margin-top: -270px;
+    margin-left: 50px;
+    transition: .4s;
+}
+
+.openbutton:hover {
+    background-color: white;
+    border-color: transparent;
+    transform: scale(1.1);
+    color: black;
+}
+
+.overlay {
+  
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+.overlay-content {
+    position: relative;
+    top: 30%; 
+    width: 100%;
+    text-align: center; 
+
+}
+
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* CURSOR */
+
+.inner-cursor {
+    position: fixed;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width  0.5s, height   0.5s;
+    z-index: 1;
+}
+
+.inner-cursor.grow {
+    width: 25px;
+    height: 20px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+    position: fixed;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s;
+    z-index: 1;
+}
+
+
+.h1-service {
+    color: white;
+    font-size: 13px;
+    transition: .4s;
+    visibility: hidden;
+}
+
+.box-7 {
+    color: #206466;
+    width: 200px;
+    height: 200px;
+    background-color: #f4f482;
+    margin-left: 1100px;
+    margin-top: 230px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+
+.h1-box7 {
+    transform: translateY(100%);
+    margin-left: 10px;
+}
+
+.p-box7 {
+    margin-left: 10px;
+    transform: translateY(60%);
+}
+
+.e {
+    color: #818181;
+    font-family: Montserrat;
+    font-size: 60px;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        height: 180vh;
+    }
+
+    .openbutton {
+        margin-left: 250px;
+        margin-top: -280px;
+    }
+
+    .name {
+        margin-left: 20px;
+        margin-top: -250px;
+        font-size: 20px;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        transform: rotate(360deg) translate(0.2rem, 4rem);
+    }
+
+    small {
+        margin-top: 100px;
+        font-size: 12px;
+    }
+
+    .box-1 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .h1-box1 {
+        font-size: 20px;
+    }
+
+    .p-box1 {
+        font-size: 12px;
+    }
+
+    .box-2 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .h1-box2 {
+        font-size: 20PX;
+    }
+
+    .p-box2 {
+        font-size: 12px;
+    }
+
+    .box-3 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 240px;
+    }
+
+    .h1-box3 {
+        font-size: 20PX;
+    }
+
+    .p-box3 {
+        font-size: 12px;
+    }
+
+    .box-4 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 460px;
+    }
+
+    .h1-box4 {
+        font-size: 20PX;
+    }
+
+    .p-box4 {
+        font-size: 12px;
+    }
+
+    .box-5 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 680px;
+    }
+
+    .h1-box5 {
+        font-size: 20PX;
+    }
+
+    .p-box5 {
+        font-size: 12px;
+    }
+
+    .box-6 {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 900px;
+    }
+
+    .h1-box6 {
+        font-size: 20PX;
+    }
+
+    .p-box6 {
+        font-size: 12px;
+        margin-top: 20px;
+    } 
+
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+
+
