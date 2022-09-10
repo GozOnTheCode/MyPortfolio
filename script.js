@@ -39,10 +39,3 @@ links.forEach(link => {
 });
 
 
-
-const btnservice = document.querySelector(".btnservice");
-const box7 = document.querySelector(".box-7");
-
-btnservice.addEventListener("click", () => {
-    box7.classList.toggle("visible");
-})
