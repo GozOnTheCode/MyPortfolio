@@ -159,8 +159,8 @@ small {
 
 .box-5 {
     color: white;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: #15e6cd;
     margin-left: 1350px;
     margin-top: 20px;
@@ -186,8 +186,8 @@ small {
 
 .box-6 {
     color: #206466;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: #f4f482;
     margin-left: 1100px;
     margin-top: 230px;
@@ -204,7 +204,7 @@ small {
 
 .p-box6 {
     margin-left: 10px;
-    transform: translateY(60%);
+    transform: translateY(120%);
 }
 
 
